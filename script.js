@@ -29,7 +29,7 @@ function weather(response) {
     if (response.data.weather[0].main === "Clouds") {
       document.getElementById(
         "boarder"
-      ).style.backgroundImage = `url("https://media.giphy.com/media/GFXNdR1tuMopi/giphy.gif")`;
+      ).style.backgroundImage = `url("https://media.giphy.com/media/TC8Cap201LtsI/giphy.gif")`;
     }
     if (
       response.data.weather[0].main === "Rain" ||
