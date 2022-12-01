@@ -163,3 +163,8 @@ hr {
   font-weight: 500;
   font-size: 20px;
 }
+.coder {
+  position: relative;
+  left: 320px;
+  top: -40px;
+}
