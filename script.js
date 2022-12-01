@@ -2,13 +2,11 @@ let apiKey = `97c2f6a3b34509ac62090edc5d18d949`;
 
 function getForecast(coordinates) {
   let apiKeyweek = `e947cb2640f1db92e6a19005bc43b435`;
-  console.log(coordinates);
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKeyweek}=metric`;
-  console.log(apiUrl);
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKeyweek}&units=metric`;
+  axios.get(apiUrl).then(displayweather);
 }
 
 function weather(response) {
-  console.log(response);
   let cityTempchange = document.querySelector(".temperature");
   let cityHumiditychange = document.querySelector(".humidityValue");
   let cityPressurechange = document.querySelector(".pressureValue");
@@ -34,7 +32,7 @@ function weather(response) {
       ).style.backgroundImage = `url("https://media.giphy.com/media/GFXNdR1tuMopi/giphy.gif")`;
     }
     if (
-      response.data.weather[0].main === "Rain" &&
+      response.data.weather[0].main === "Rain" ||
       response.data.weather[0].main === "Drizzle"
     ) {
       document.getElementById(
@@ -57,7 +55,7 @@ function weather(response) {
       ).style.backgroundImage = `url("https://media.giphy.com/media/XBVHoZahgO0sskTGxa/giphy.gif")`;
     }
     if (
-      response.data.weather[0].main === "Mist" &&
+      response.data.weather[0].main === "Mist" ||
       response.data.weather[0].main === "Fog"
     ) {
       document.getElementById(
@@ -68,7 +66,8 @@ function weather(response) {
   changeImg();
 }
 
-function displayweather() {
+function displayweather(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#week-weather");
   forecastHtml = "";
   let days = ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -91,7 +90,6 @@ function displayweather() {
 
   forecastElement.innerHTML = forecastHtml;
 }
-displayweather();
 
 function searchInput(event) {
   event.preventDefault();
