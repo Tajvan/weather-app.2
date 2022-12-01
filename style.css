@@ -136,37 +136,30 @@ li {
 
 table {
   position: relative;
-  top: 45px;
-  left: 45px;
-  width: 248px;
+  top: 55px;
+  left: 55px;
+  width: 260px;
   line-height: 10px;
-  margin-top: 20px;
 }
 
-th {
-  text-align: left;
-  margin-bottom: 0;
+img {
+  max-width: 30px;
+  margin-top: 5px;
 }
-td {
+td span {
   text-align: right;
 }
-.weekday {
-  font-size: 20px;
-  font-weight: 400;
-}
-.daytemp {
-  font-weight: 700;
-  font-size: 20px;
-}
-img {
-  max-width: 20px;
-  margin-top: 10px;
-}
-th .imgholder {
-  margin: 0 auto;
-}
+
 hr {
   width: 120px;
-  margin: 20px 0;
   border: 2px solid whitesmoke;
+  margin-top: 5px;
+}
+.weekday {
+  font-weight: 300;
+  font-size: 20px;
+}
+.daytemp {
+  font-weight: 500;
+  font-size: 20px;
 }
