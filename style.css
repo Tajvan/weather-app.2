@@ -1,13 +1,14 @@
 body {
   font-family: "Montserrat", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .boarder {
   border: 1px solid black;
   margin: 50px auto;
-  background-color: rgb(68, 65, 65);
   height: 550px;
   width: 800px;
-  background-image: url();
+  background-image: url(https://www.wallpapertip.com/wmimgs/25-252076_background-image-for-weather-app.jpg);
   background-size: cover;
 }
 .weekWeather {
@@ -32,11 +33,12 @@ input {
   padding: 10px 10px;
   position: relative;
   top: 15px;
-  left: 240px;
+  left: 230px;
   background-color: transparent;
-  border: 1px solid rgba(245, 245, 245, 0.071);
-  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.471);
+  font-weight: 400;
 }
+
 .temperature,
 .unitsCelsia,
 .unitsFarenheit,
