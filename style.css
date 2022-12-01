@@ -34,7 +34,7 @@ input {
   top: 15px;
   left: 240px;
   background-color: transparent;
-  border: none;
+  border: 1px solid rgba(245, 245, 245, 0.071);
   color: whitesmoke;
 }
 .temperature,
