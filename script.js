@@ -66,26 +66,49 @@ function weather(response) {
   changeImg();
 }
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wendsday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+
+  return days[day];
+}
+
 function displayweather(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#week-weather");
   forecastHtml = "";
-  let days = ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `  <tr>
-              <th class="weekday">${day}</th>
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHtml =
+        forecastHtml +
+        `  <tr>
+              <th class="weekday">${formatDate(forecastDay.dt)}</th>
               <td class="daytemp">
-                <span class="min-temp">15°</span>-<span class="max-temp"
-                  >20°</span
+                <span class="min-temp">${Math.round(
+                  forecastDay.temp.min
+                )}°</span> - <span class="max-temp"
+                  >${Math.round(forecastDay.temp.max)}°</span
                 >
               </td>
             </tr>
             <th class="imgholder">
-              <img src="sun.png" alt="" />
+              <img src="http://openweathermap.org/img/wn/${
+                forecastDay.weather[0].icon
+              }@2x.png" alt="" />
               <hr />
             </th>`;
+    }
   });
 
   forecastElement.innerHTML = forecastHtml;
