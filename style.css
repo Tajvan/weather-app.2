@@ -35,7 +35,7 @@ input {
   left: 240px;
   background-color: transparent;
   border: 1px solid rgba(245, 245, 245, 0.071);
-  color: whitesmoke;
+  color: black;
 }
 .temperature,
 .unitsCelsia,
@@ -46,7 +46,7 @@ input {
   top: 270px;
   font-size: 65px;
   font-weight: bolder;
-  left: 15px;
+  left: 10px;
   color: whitesmoke;
   margin: 0;
   padding: 0;
@@ -55,7 +55,7 @@ input {
 .unitsCelsia,
 .unitsFarenheit,
 .stick {
-  font-size: 15px;
+  font-size: 10px;
   top: 240px;
   font-weight: 400;
   text-decoration: none;
@@ -69,17 +69,17 @@ input {
 .weathername {
   color: whitesmoke;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   top: 270px;
   font-weight: 400;
-  left: -28px;
+  left: -20px;
   text-transform: capitalize;
 }
 
 h1 {
   position: relative;
   top: 270px;
-  left: 42px;
+  left: 36px;
   font-size: 30px;
   font-weight: 300;
   margin: 0;
@@ -118,7 +118,7 @@ li {
 .additionalinformation {
   position: relative;
   display: inline;
-  left: 250px;
+  left: 265px;
   top: 145px;
   color: whitesmoke;
 }
