@@ -1,0 +1,172 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.boarder {
+  border: 1px solid black;
+  margin: 50px auto;
+  background-color: rgb(68, 65, 65);
+  height: 550px;
+  width: 800px;
+  background-image: url();
+  background-size: cover;
+}
+.weekWeather {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: inline-block;
+  top: -300px;
+  left: 448px;
+  bottom: 0;
+  width: 350px;
+  height: 547px;
+  z-index: 3;
+}
+
+input {
+  border-radius: 40px;
+  padding: 10px 10px;
+  position: relative;
+  top: 15px;
+  left: 240px;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+}
+.temperature,
+.unitsCelsia,
+.unitsFarenheit,
+.stick {
+  position: relative;
+  display: inline;
+  top: 270px;
+  font-size: 65px;
+  font-weight: bolder;
+  left: 15px;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.unitsCelsia,
+.unitsFarenheit,
+.stick {
+  font-size: 15px;
+  top: 240px;
+  font-weight: 400;
+  text-decoration: none;
+  left: 16px;
+}
+.unitsCelsia:hover,
+.unitsFarenheit:hover {
+  cursor: pointer;
+  color: chocolate;
+}
+.weathername {
+  color: whitesmoke;
+  position: relative;
+  font-size: 16px;
+  top: 270px;
+  font-weight: 400;
+  left: -28px;
+  text-transform: capitalize;
+}
+
+h1 {
+  position: relative;
+  top: 270px;
+  left: 42px;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+
+.time {
+  display: inline;
+  position: relative;
+  left: 42px;
+  top: -15px;
+  color: whitesmoke;
+}
+#today-day,
+#today-time {
+  font-size: 15px;
+  line-height: 10px;
+  color: whitesmoke;
+}
+.gpsButton {
+  position: relative;
+  display: inline;
+  top: -105px;
+  left: 400px;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+}
+.gpsButton:hover {
+  color: chocolate;
+}
+li {
+  list-style: none;
+}
+.additionalinformation {
+  position: relative;
+  display: inline;
+  left: 250px;
+  top: 145px;
+  color: whitesmoke;
+}
+.windValue,
+.pressureValue,
+.humidityValue {
+  padding-left: 20px;
+}
+.windValue {
+  padding-left: 45px;
+}
+.humidityValue {
+  padding-left: 15px;
+}
+
+table {
+  position: relative;
+  top: 45px;
+  left: 45px;
+  width: 248px;
+  line-height: 10px;
+  margin-top: 20px;
+}
+
+th {
+  text-align: left;
+  margin-bottom: 0;
+}
+td {
+  text-align: right;
+}
+.weekday {
+  font-size: 20px;
+  font-weight: 400;
+}
+.daytemp {
+  font-weight: 700;
+  font-size: 20px;
+}
+img {
+  max-width: 20px;
+  margin-top: 10px;
+}
+th .imgholder {
+  margin: 0 auto;
+}
+hr {
+  width: 120px;
+  margin: 20px 0;
+  border: 2px solid whitesmoke;
+}
